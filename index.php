@@ -1,10 +1,4 @@
 <?php
-
-/* Home Page
- * The home page of the working demo of oauth2 script.
- * @author : MarkisDev
- * @copyright : https://markis.dev
- */
  
 #Enable this to have Error Logging
 #Click on OAuth Link to log in
@@ -24,6 +18,15 @@ require __DIR__ . "/discord.php";
 ?>
 
  <html>
+<style>
+a {
+  background-color: #7289DA;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+</style>
   <head>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -38,7 +41,7 @@ require __DIR__ . "/discord.php";
      <h1> User Guilds :</h1>
      <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
      <h3 style="display:inline;"><a href="
-     <a class="btn btn-primary" href="<?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>" role="button">Link</a>
+     <a href="<?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>" role="button">Login</a>
      # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))
      {

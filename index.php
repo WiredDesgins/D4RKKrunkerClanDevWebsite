@@ -1,4 +1,10 @@
 <?php
+
+/* Home Page
+ * The home page of the working demo of oauth2 script.
+ * @author : MarkisDev
+ * @copyright : https://markis.dev
+ */
  
 #Enable this to have Error Logging
 #Click on OAuth Link to log in
@@ -18,17 +24,8 @@ require __DIR__ . "/discord.php";
 ?>
 
  <html>
-<style>
-a {
-  background-color: #7289DA;
-  color: white;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-</style>
   <head>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
   </head>
   <body>
      <title>Demo - Discord Oauth</title>
@@ -38,11 +35,14 @@ a {
      <p> Name : <?php echo $_SESSION['username'] . '#'. $_SESSION['discrim']; ?></p>
      <p> ID : <?php echo $_SESSION['user_id']; ?></p>
      <p> Profile Picture : <img src="https://cdn.discordapp.com/avatars/<?php $extention = is_animated($_SESSION['user_avatar']); echo $_SESSION['user_id'] . "/" . $_SESSION['user_avatar'] . $extention; ?>" /></p>
+     <p> Response : <?php echo json_encode($_SESSION['user']); ?></p>
+     <br />
      <h1> User Guilds :</h1>
      <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
      <h3 style="display:inline;"><a href="
-     <input type="submit" name="submit" placeholder="Login to Discord" value="<?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>">  
-<?php
+     <?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
+     <button class="button button1">Login to discord</button>
+     <?php
      # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))
      {

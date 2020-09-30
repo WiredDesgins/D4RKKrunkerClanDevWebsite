@@ -25,7 +25,7 @@ require __DIR__ . "/discord.php";
 
  <html>
   <head>
-      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
      <title>Demo - Discord Oauth</title>
@@ -35,14 +35,10 @@ require __DIR__ . "/discord.php";
      <p> Name : <?php echo $_SESSION['username'] . '#'. $_SESSION['discrim']; ?></p>
      <p> ID : <?php echo $_SESSION['user_id']; ?></p>
      <p> Profile Picture : <img src="https://cdn.discordapp.com/avatars/<?php $extention = is_animated($_SESSION['user_avatar']); echo $_SESSION['user_id'] . "/" . $_SESSION['user_avatar'] . $extention; ?>" /></p>
-     <p> Response : <?php echo json_encode($_SESSION['user']); ?></p>
-     <br />
      <h1> User Guilds :</h1>
      <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
      <h3 style="display:inline;"><a href="
-     <?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
-     <button class="button button1">Login to discord</button>
-     <?php
+     <a class="btn" href="?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>"> Login </a>
      # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))
      {

@@ -30,7 +30,7 @@ require __DIR__ . "/discord.php";
   <body>
      <h3 style="display:inline;"><a href="
      <?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
-     <button class="button button1">Log In To DIscor</button>
+     <input type="button" name="Login" placeholder="Login to discord">
      <?php
      # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))

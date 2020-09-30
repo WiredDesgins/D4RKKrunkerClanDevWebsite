@@ -15,7 +15,7 @@ require __DIR__ . "/discord.php";
 require __DIR__ . "/functions.php";
  
 # Initializing all the required values for the script to work
-init ("http://127.0.0.1/demo/login.php", "378191060242792449", "jGsRpLN32NObExT15MSu_Qb9jZ_bJ8IQ");
+init ("https://d4rkdev.herokuapp.com/index.php", "760766489367281705", "5AwqKdfbfHf6FrcwKLTBRdQNx2-s6VI8");
  
 # Fetching user details | (identify scope)
 get_user();

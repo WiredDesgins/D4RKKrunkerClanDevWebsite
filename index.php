@@ -34,7 +34,7 @@ require __DIR__ . "/discord.php";
      <h1> User Guilds :</h1>
      <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
      <h3 style="display:inline;"><a href="
-     <?php echo url("378191060242792449", "http://127.0.0.1/demo/login.php", "identify guilds"); ?>
+     <?php echo url("378191060242792449", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
      ">OAUTH LINK </a></h3>
      <?php
      # Displaying logout url only if user is logged in

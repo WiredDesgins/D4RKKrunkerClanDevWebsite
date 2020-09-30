@@ -24,14 +24,19 @@ require __DIR__ . "/discord.php";
 ?>
 
  <html>
+  <head>
+      
+  </head>
+  <body>
      <h3 style="display:inline;"><a href="
      <?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
-     ">OAUTH LINK </a></h3>
+     <button class="button button1">Log In To DIscor</button>
      <?php
-     # Displaying logout url only if user is logged in
+     # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))
      {
          echo '<h3 style="color:red; display:inline;"><a style="color:red; padding-left:10px;" href="logout.php">LOGOUT</a></h3>';
      }
      ?>
+  </body>
  </html>

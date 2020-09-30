@@ -24,7 +24,6 @@ require __DIR__ . "/discord.php";
 ?>
 
  <html>
-     /p>
      <h3 style="display:inline;"><a href="
      <?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>
      ">OAUTH LINK </a></h3>

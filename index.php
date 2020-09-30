@@ -24,8 +24,6 @@ require __DIR__ . "/discord.php";
 ?>
 
  <html>
-     <title>Demo - Discord Oauth</title>
-     <h1>A Simple Working Demo of the Script </h2>
      <h2 style="color:red; font-weight:900;"> LOGIN WITH THE LINK BELOW TO SEE IT WORK! </h3>
      <h1> User Details :</h1>
      <p> Name : <?php echo $_SESSION['username'] . '#'. $_SESSION['discrim']; ?></p>

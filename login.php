@@ -15,7 +15,7 @@ require __DIR__ . "/discord.php";
 require __DIR__ . "/functions.php";
  
 # Initializing all the required values for the script to work
-init ("https://d4rkdev.herokuapp.com/index.php", "760766489367281705", "5AwqKdfbfHf6FrcwKLTBRdQNx2-s6VI8");
+init ("https://d4rkdev.herokuapp.com/login.php", "760766489367281705", "5AwqKdfbfHf6FrcwKLTBRdQNx2-s6VI8");
  
 # Fetching user details | (identify scope)
 get_user();
@@ -27,5 +27,3 @@ $_SESSION['guilds'] = get_guilds();
 redirect("index.php");
 
 ?>
- 
- 

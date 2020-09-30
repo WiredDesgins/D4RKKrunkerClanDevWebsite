@@ -41,7 +41,7 @@ a {
      <h1> User Guilds :</h1>
      <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
      <h3 style="display:inline;"><a href="
-     <a href="<?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>" role="button">Login</a>
+     <input type="submit" name="submit" value="<?php echo url("760766489367281705", "https://d4rkdev.herokuapp.com/login.php", "identify guilds"); ?>">  
 <?php
      # Displaying logout url only if user is logged Log In To DIscor
      if(isset($_SESSION['user']))
